@@ -25,6 +25,6 @@ class Eletrodomestico:
 
 eletr = Eletrodomestico(False, 110, 150)
 eletr.set_valor_voltagem(520)
-print(eletr.get_valor_voltagem{valor_voltagem})
+print(eletr.get_valor_voltagem())
 eletr.set_valor_consumo(110)
-print(eletr.get_valor_consumo{valor_consumo})
+print(eletr.get_valor_consumo())
