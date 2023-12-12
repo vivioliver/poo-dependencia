@@ -2,6 +2,10 @@ import tkinter as tk
 from tkinter import messagebox
 from tkinter import simpledialog
 from tkinter import ttk
+<<<<<<< HEAD
+=======
+from PIL import Image, ImageTk
+>>>>>>> 8c8d8ebe825773e1f61da9b10c817609e6e3ca84
 import random
 
 class Pergunta:
@@ -102,6 +106,7 @@ class QuizApp:
         messagebox.showinfo("Resultado", resultado)
         self.master.destroy()
 
+<<<<<<< HEAD
 perguntas = [
     Pergunta("Quem é considerado o pai da teoria da relatividade?", ["Isaac Newton", "Albert Einstein", "Galileu Galilei", "Niels Bohr"], "Albert Einstein", "Albert Einstein revolucionou a compreensão do tempo, espaço e gravidade."),
     
@@ -122,6 +127,13 @@ perguntas = [
     Pergunta("Quem é o co-fundador da Microsoft, juntamente com Bill Gates?", ["Steve Jobs", "Mark Zuckerberg", "Jeff Bezos", "Paul Allen"], "Paul Allen", "Paul Allen foi co-fundador da Microsoft ao lado de Bill Gates."),
     
     Pergunta("Qual é o único planeta do sistema solar que gira no sentido horário?", ["Marte", "Júpiter", "Vênus", "Urano"], "Vênus", "Vênus é o único planeta que tem rotação retrógrada, girando no sentido horário."),
+=======
+# Exemplo de perguntas (substitua por suas próprias perguntas)
+perguntas = [
+    Pergunta("Qual é a capital do Brasil?", ["Rio de Janeiro", "São Paulo", "Brasília", "Belo Horizonte"], "Brasília", "A cidade foi construída para ser a capital do Brasil."),
+    Pergunta("Qual é o maior planeta do sistema solar?", ["Vênus", "Marte", "Júpiter", "Saturno"], "Júpiter", "Este planeta é famoso por suas faixas de nuvens coloridas."),
+    Pergunta("Quem escreveu 'Dom Quixote'?", ["Miguel de Cervantes", "William Shakespeare", "Jane Austen", "Charles Dickens"], "Miguel de Cervantes", "Este autor espanhol é conhecido por sua obra-prima 'Dom Quixote'."),
+>>>>>>> 8c8d8ebe825773e1f61da9b10c817609e6e3ca84
 ]
 
 root = tk.Tk()
