@@ -36,6 +36,11 @@ class QuizApp:
 
         self.opcoes_var = tk.StringVar()
         self.opcoes_radio = []
+
+
+
+
+
         for i in range(4):
             opcao_radio = tk.Radiobutton(self.master, text="", variable=self.opcoes_var, value="", command=self.selecionar_resposta)
             opcao_radio.pack()
@@ -71,6 +76,11 @@ class QuizApp:
     def selecionar_resposta(self):
         self.resposta_escolhida = self.opcoes_var.get()
 
+
+
+
+
+
     def iniciar_contagem_regressiva(self):
         self.contagem_regressiva = 10
         self.atualizar_contagem_regressiva()
@@ -104,32 +114,18 @@ class QuizApp:
         self.master.destroy()
 
 perguntas = [
-    Pergunta("Quem é considerado o pai da teoria da relatividade?", ["Isaac Newton", "Albert Einstein", "Galileu Galilei", "Niels Bohr"], "Albert Einstein", "Albert Einstein revolucionou a compreensão do tempo, espaço e gravidade."),
-    
-    Pergunta("Qual foi o evento que deu início à Primeira Guerra Mundial?", ["Ataque a Pearl Harbor", "Afundamento do RMS Lusitania", "Assassinato do Arquiduque Francisco Ferdinando", "Tratado de Versalhes"], "Assassinato do Arquiduque Francisco Ferdinando", "O assassinato do Arquiduque Francisco Ferdinando em Sarajevo desencadeou o conflito global."),
-    
-    Pergunta("Qual filme ganhou o Oscar de Melhor Filme em 1994?", ["O Pianista", "A Lista de Schindler", "Forrest Gump", "O Rei Leão"], "Forrest Gump", "Forrest Gump, dirigido por Robert Zemeckis, foi o vencedor do Oscar de Melhor Filme em 1994."),
-    
-    Pergunta("Qual é o país mais populoso do mundo?", ["Estados Unidos", "China", "Índia", "Rússia"], "China", "A China é o país mais populoso, com uma vasta população."),
-    
-    Pergunta("Quem pintou 'Noite Estrelada'?", ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"], "Vincent van Gogh", "A 'Noite Estrelada' é uma obra-prima de Vincent van Gogh, famoso por seu estilo único."),
-    
-    Pergunta("Qual banda britânica é conhecida como os 'Fab Four'?", ["The Rolling Stones", "The Who", "The Beatles", "Queen"], "The Beatles", "The Beatles, também conhecidos como os 'Fab Four', foram uma banda icônica."),
-    
-    Pergunta("Qual é o título do primeiro livro da série 'Harry Potter'?", ["Harry Potter e a Pedra Filosofal", "Harry Potter e o Prisioneiro de Azkaban", "Harry Potter e a Ordem da Fênix", "Harry Potter e as Relíquias da Morte"], "Harry Potter e a Pedra Filosofal", "O primeiro livro é 'Harry Potter e a Pedra Filosofal'."),
-    
-    Pergunta("Qual país sediou os Jogos Olímpicos de Verão em 2016?", ["Rússia", "Estados Unidos", "Brasil", "China"], "Brasil", "O Brasil foi o país anfitrião dos Jogos Olímpicos de Verão em 2016."),
-    
-    Pergunta("Quem é o co-fundador da Microsoft, juntamente com Bill Gates?", ["Steve Jobs", "Mark Zuckerberg", "Jeff Bezos", "Paul Allen"], "Paul Allen", "Paul Allen foi co-fundador da Microsoft ao lado de Bill Gates."),
-    
-    Pergunta("Qual é o único planeta do sistema solar que gira no sentido horário?", ["Marte", "Júpiter", "Vênus", "Urano"], "Vênus", "Vênus é o único planeta que tem rotação retrógrada, girando no sentido horário."),
+    Pergunta("O que um programador faz quando está com fome enquanto codifica?", ["Come bytes de informação", "Faz um lanche rápido", "Pede um delivery de código-fonte", "Niels Bohr"], "Come bytes de informação", "Porque a fome não espera por compilação!"),
+    Pergunta("Qual é a comida favorita do programador?", ["Fish and Chips", "Cookies e Cache", "Bits de Frango", "Niels Bohr"], "Cookies e Cache", "Porque é rápido e armazenado para acesso futuro."),
+    Pergunta("Qual é o animal favorito do programador?", ["Gato", "Cachorro", "Pinguim", "Niels Bohr"], "Pinguim", "Porque ele gosta de Linux."),
+    Pergunta("O que o programador faz antes de dormir?", ["Fecha os olhos", "Desliga o computador", "Fecha a tampa do laptop", "Niels Bohr"], "Fecha a tampa do laptop", "Para entrar no modo de suspensão."),
+    Pergunta("Por que o programador odeia ir à praia?", ["Medo de sol", "Problemas com areia", "Não sabe nadar", "Niels Bohr"], "Problemas com areia", "Porque é difícil evitar os bugs na areia."),
+    Pergunta("Como o programador pede pizza?", ["Por telefone", "Online", "Usando APIs de entrega", "Niels Bohr"], "Usando APIs de entrega", "Porque ele gosta de pedir com eficiência."),
+    Pergunta("O que o programador mais gosta de assistir?", ["Séries de comédia", "Filmes de ação", "Documentários técnicos", "Niels Bohr"], "Documentários técnicos", "Para aprender novas tecnologias."),
+    Pergunta("Qual é o superpoder secreto do programador?", ["Voar", "Invisibilidade", "Debugging instantâneo", "Niels Bohr"], "Debugging instantâneo", "Resolver problemas com um único olhar."),
+    Pergunta("O que o programador diz para a sua cafeína?", ["Você me deixa acordado", "Você me dá energia", "Você é meu combustível", "Niels Bohr"], "Você é meu combustível", "Porque cafeína é essencial para a codificação!"),
+    Pergunta("Se nossa professora de programação fosse uma guru da moda no mundo da codificação, como descreveríamos seu estilo e paleta de cores estilosa?", ["Pixel Prism - reinventando a moda com uma mistura de pixels multicoloridos, capturando a essência da programação criativa.", "Stylish Scripter - deslumbrando com um visual moderno, misturando preto, rosa e detalhes em prata", "Code Couture - brilhando com uma paleta vibrante de verde-limão, roxo e toques de código dourado", "Cyber Chic - reinventando a moda com uma mistura de preto, azul elétrico e detalhes de neon"], "Pixel Prism - reinventando a moda com uma mistura de pixels multicoloridos, capturando a essência da programação criativa.", "Sobre nossa professora Priscilla")
 ]
 
-perguntas = [
-    Pergunta("Qual é a capital do Brasil?", ["Rio de Janeiro", "São Paulo", "Brasília", "Belo Horizonte"], "Brasília", "A cidade foi construída para ser a capital do Brasil."),
-    Pergunta("Qual é o maior planeta do sistema solar?", ["Vênus", "Marte", "Júpiter", "Saturno"], "Júpiter", "Este planeta é famoso por suas faixas de nuvens coloridas."),
-    Pergunta("Quem escreveu 'Dom Quixote'?", ["Miguel de Cervantes", "William Shakespeare", "Jane Austen", "Charles Dickens"], "Miguel de Cervantes", "Este autor espanhol é conhecido por sua obra-prima 'Dom Quixote'."),
-]
 
 root = tk.Tk()
 app = QuizApp(root, perguntas)
